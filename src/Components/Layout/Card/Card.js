@@ -3,12 +3,11 @@ import './styles.css';
 
 function Card({pokemon}) {
     return(
-        <>  
+        <div>  
             <div>
-            <div className="card">
+            <div className="card" key={pokemon.id}>
                 <div className="cardImage">
-                    <img src={pokemon.sprites.front_default} alt="pokemonImage">
-                    </img>
+                    <img className="pokePhoto" src={pokemon.sprites.front_default} alt="pokemonImage"></img>
                 </div>
                 <div className="cardName">
                     {pokemon.name}
@@ -44,7 +43,7 @@ function Card({pokemon}) {
                 </div>
             </div>
             </div>
-        </>
+        </div>
     )
 }
 

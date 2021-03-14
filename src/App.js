@@ -13,6 +13,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const initialURL = 'https://pokeapi.co/api/v2/pokemon';
 
+  console.log(pokemonData)
+
   useEffect(() => {
     async function fetchData() {
       let response = await getAllPokemon(initialURL);
@@ -54,10 +56,13 @@ function App() {
 
   return (
     <div>
+    <>
+    <NavBar />
+    </>
+    <>
       {
-        loading ? <h1>Loading Pokemon...</h1> : (
+        loading ? <h1 className="load">Loading Pokemon...</h1> : (
         <>
-          <NavBar />
           <div className="btn">
             <button onClick={prev}>Previous</button>
             <button onClick={next}>Next</button>
@@ -69,12 +74,15 @@ function App() {
               )
             })}
           </div>
+          <div className="btn">
+            <button  className="btn button" onClick={prev}>Previous</button>
+            <button className="btn button" onClick={next}>Next</button>
+          </div>
         </>
       )
       }
-      <div className="btn">
-            <button  className="btn button" onClick={prev}>Previous</button>
-            <button className="btn button" onClick={next}>Next</button>
+      </>
+      <div>
       </div>
     </div>
   );
