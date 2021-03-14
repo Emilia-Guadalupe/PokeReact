@@ -1,5 +1,12 @@
 .Navbar {
+    font-family: 'Yusei Magic', sans-serif;
     padding: 20px;
-    background: #FF4236;
+    background: rgba(68,68,68,255);
+    border-bottom: 2px solid rgba(205,193,127,255);
+    color: white;
+}
+
+.homeLink {
+    text-decoration: none;
     color: white;
 }

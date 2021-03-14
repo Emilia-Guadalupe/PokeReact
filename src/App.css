@@ -8,6 +8,11 @@
     grid-gap: 10px;
 }
 
+.load {
+    font-family: 'Yusei Magic', sans-serif;
+    color: white;
+}
+
 .btn {
     display: flex;
     justify-content: center;
@@ -15,11 +20,18 @@
 }
 
 .btn button {
-    border-style: none;
-    padding: 5px 10px;
+    border: 1px solid rgba(205,193,127,255);
+    padding: 5px;
     margin-right: 10px;
-    border-radius: 5px;
-    background: #30a7d7;
+    border-radius: 5%;
+    background:  rgba(205,193,127,255);
     color: #fff;
     font-size: 1em;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.btn button:hover {
+    border: 1px solid  rgba(205,193,127,255);
+    background-color: white;
+    color:  rgba(205,193,127,255);
 }

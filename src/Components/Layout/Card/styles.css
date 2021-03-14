@@ -9,13 +9,21 @@ p {
 }
 
 .card {
-    background: white;
+    color: white;
+    background: rgba(68,68,68,255);
     border-radius: 10px;
     width: 80%;
+    height: 100%;
+    border-top: 1px solid rgba(205,193,127,255);
+    border-bottom: 1px solid rgba(205,193,127,255);
 }
 
 .cardImage {
     text-align: center;
+}
+
+.pokePhoto {
+    height: 7rem;
 }
 
 .cardTypes {
@@ -24,25 +32,33 @@ p {
 }
 
 .cardDetailTypes {
-    padding: 5px 10px;
-    margin: 10px 10px 10px 0;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
     border-radius: 5px;
-    background: cyan;
-    color: #fff;
+    background: transparent;
+    color: rgba(206,190,128,255);
+    border: 1px solid rgba(205,193,127,255);
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .cardName {
+    font-size: 1.5rem;
     text-align: center;
     text-transform: capitalize;
     font-weight: 800;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .cardInfo {
     margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .card_data {
-    padding-bottom: 10px;
+    font-size: 1rem;
+    padding: 2%;
 }
 
 .card_data .title {
