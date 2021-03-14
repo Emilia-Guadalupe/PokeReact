@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+## This a Pokedex made with React 
+
+You can start Cloning or Downloading this proyect. 
+
+You don't need any special or extra dependencies, just install the basic ones with 'npm install'.
+
+See the proyect in this link: https://stupefied-swirles-51325b.netlify.app/
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
